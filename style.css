@@ -58,33 +58,14 @@ body{
 .main-1-02{
     background-color:rgb(250, 250, 250);
     border:1px solid rgb(228 228 228);
-    height: 500px;
     width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 20px 40px;
-}
-.main-1-02-demo{
-    position: relative;
-    height: 380px;
-    background:darkgrey;
-    color: white;
-    font-size: 50px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@keyframes content {
-    0%{
-        
-    }
-    100%{
-        transform:translateX(-450px)translateY(240px)scale(0);
-        visibility: hidden;
-    }
+    justify-content: space-around;
+    padding: 50px 0;
 }
 
 .button-1 > button{
@@ -96,30 +77,77 @@ body{
     /*transition: all .5s;*/
 
 }
-
 .button-1 > button:hover{
     background:#d92b2b;
     cursor:pointer;
 }
+.delete-1.start1{
+    animation:1.5s ease-in delete1;
+}
+.delete-2.start2{
+    animation:1.5s ease-in delete2;
+}
+.delete-3.start3{
+    animation:1.5s ease-in delete3;
+}
+.delete-4.start4 {
+    animation: 1.5s ease-in delete4;
+}
 
-.button-1 > button:active{
-    background:#d92b2b;
-    cursor:pointer;
-    /*-webkit-transform: rotateX(60deg)translateZ(20px);*/
-}
-.delete-1.start{
-    animation:1.5s ease-in delete;
-}
-.main-1-02-demo.start1{
-    animation: 1s ease-in content;
+@keyframes delete1 {
+    0%{
+        transform: rotateX(0deg)translateZ(0px);
+    }
+    40%{
+        /*transform: rotateX(-60deg)translateZ(20px);*/
+        /*transform: translateX(50px);*/
+        /*transform: translateY(45px);*/
+        transform: rotateY(-60deg)translateZ(35px);
+    }
+    100%{
+        transform: rotateX(0deg)translateZ(0px);
+    }
 }
 
-@keyframes delete {
+@keyframes delete2 {
     0%{
         transform: rotateX(0deg)translateZ(0px);
     }
     40%{
         transform: rotateX(-60deg)translateZ(20px);
+        /*transform: translateX(50px);*/
+        /*transform: translateY(45px);*/
+        /*transform: rotateY(-60deg)translateZ(35px);*/
+    }
+    100%{
+        transform: rotateX(0deg)translateZ(0px);
+    }
+}
+
+@keyframes delete3 {
+    0%{
+        transform: rotateX(0deg)translateZ(0px);
+    }
+    40%{
+        /*transform: rotateX(-60deg)translateZ(20px);*/
+        transform: translateX(50px);
+        /*transform: translateY(45px);*/
+        /*transform: rotateY(-60deg)translateZ(35px);*/
+    }
+    100%{
+        transform: rotateX(0deg)translateZ(0px);
+    }
+}
+
+@keyframes delete4 {
+    0%{
+        transform: rotateX(0deg)translateZ(0px);
+    }
+    40%{
+        /*transform: rotateX(-60deg)translateZ(20px);*/
+        /*transform: translateX(50px);*/
+        transform: translateY(40px);
+        /*transform: rotateY(-60deg)translateZ(35px);*/
     }
     100%{
         transform: rotateX(0deg)translateZ(0px);
@@ -134,7 +162,6 @@ body{
 .button-1{
     display: inline-block;
     perspective:140px;
-    margin-top: 20px;
 }
 
 .button-1-1{
@@ -145,8 +172,9 @@ body{
     width: 80px;
     height:50px;
     z-index: -1;
-    background: #3f3f3f;
-    box-shadow:inset 0px 15px 15px -30px #000;
+    background-image: linear-gradient(90deg,#222325,#3b3c3f,#222325);
+    border: 1px solid #efbe61;
+    box-shadow: 1px 1px 5px #a1a1a1 inset;
 }
 
 

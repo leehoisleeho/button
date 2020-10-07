@@ -1,31 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Button</title>
-    <script>
-        function dl(){
-          let btn = document.getElementById("shanchu")
-          let btn1 =document.getElementById("main-1-02-demo")
-            btn.classList.add("start")
-            btn1.classList.add("start1")
-        }
-        document.onanimationend =()=>{
-            setTimeout(function(){
-                let btn = document.getElementById("shanchu")
-                let btn1 =document.getElementById("main-1-02-demo")
-                btn.classList.remove("start")
-                btn1.classList.remove("start1")
-            }, 1000);
-        }
-    </script>
-    <script rel="script" src="//at.alicdn.com/t/font_2115061_6lag1wt4xjw.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
-
 </head>
+
 <body>
     <div class="container">
         <header class="header-1">
@@ -39,23 +23,47 @@
                 <h2>删除按钮</h2>
             </div>
             <div class="main-1-02">
-                <div class="main-1-02-demo" id="main-1-02-demo">
-                    内容
-                </div>
                 <div class="button-1">
-                    <button class="delete-1" onclick="dl()" id="shanchu">
+                    <button class="delete-1" id="shanchu1">
                         <svg class="icon main-1-03" aria-hidden="true">
                             <use xlink:href="#icon-shanchu-copy"></use>
                         </svg>
                     </button>
                     <div class="button-1-1">
-
                     </div>
                 </div>
-
+                <div class="button-1">
+                    <button class="delete-2" id="shanchu2">
+                        <svg class="icon main-1-03" aria-hidden="true">
+                            <use xlink:href="#icon-shanchu-copy"></use>
+                        </svg>
+                    </button>
+                    <div class="button-1-1">
+                    </div>
+                </div>
+                <div class="button-1">
+                    <button class="delete-3"  id="shanchu3">
+                        <svg class="icon main-1-03" aria-hidden="true">
+                            <use xlink:href="#icon-shanchu-copy"></use>
+                        </svg>
+                    </button>
+                    <div class="button-1-1">
+                    </div>
+                </div>
+                <div class="button-1">
+                    <button class="delete-4" id="shanchu4">
+                        <svg class="icon main-1-03" aria-hidden="true">
+                            <use xlink:href="#icon-shanchu-copy"></use>
+                        </svg>
+                    </button>
+                    <div class="button-1-1">
+                    </div>
+                </div>
             </div>
 
         </main>
     </div>
+    <script rel="script" src="./main.js"></script>
+    <script rel="script" src="//at.alicdn.com/t/font_2115061_6lag1wt4xjw.js"></script>
 </body>
 </html>
