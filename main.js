@@ -33,3 +33,26 @@ btn3.onanimationend = () => {
     let btn3 = document.getElementById("shanchu4")
     btn3.classList.remove("start4")
 }
+
+let btn4 =document.getElementById("ripple-1")
+    btn4.onclick=function () {
+        let active = document.getElementById("ripple-1-1")
+        active.classList.add("active")
+    }
+
+let active = document.getElementById("ripple-1-1")
+active.onanimationend=function () {
+    let active = document.getElementById("ripple-1-1")
+    active.classList.remove("active")
+}
+
+let btn5 = document.getElementById("ripple-2")
+btn5.onclick=function () {
+    let active1 = document.getElementById("ripple-1-2")
+    active1.classList.add("active1")
+}
+
+btn5.ontransitionend=function () {
+    let active1 = document.getElementById("ripple-1-2")
+    active1.classList.remove("active1")
+}

@@ -37,15 +37,40 @@ body{
     background-color:rgb(250, 250, 250);
 }
 
+.main-2{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /*border: 1px solid rgb(102, 102, 102);*/
+    border-bottom: 0;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    background-color:rgb(250, 250, 250);
+}
+
 .main-1>h2{
     font-size: 20px;
     margin-left: 10px;
     color: #3b3c3f;
 }
+
+.main-2>h2{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #3b3c3f;
+}
+
+
 .main-1>svg{
     margin-left: 10px;
     width: 1.5em; height: 1.5em;
 }
+
+
 
 .header-1>h1{
     font-size: 16px;
@@ -176,11 +201,95 @@ body{
     box-shadow: 1px 1px 5px #a1a1a1 inset;
 }
 
+.ripple{
+    margin-left: 20px;
+    height: 30px;
+    width: 90px;
+    background: url("./img/ripple.png");
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.ripple>img{
+    border: 1px solid red;
+}
+
+.ripple-1{
+    width:80px;
+    height:36px;
+    visibility:visible;
+    font-size:14px;
+    font-weight:500;
+    color:rgb(255, 255, 255);
+    text-align:center;
+    background-color:rgb(26, 115, 232);
+    background-image:none;
+    border-color:rgb(255, 255, 255);
+    border-style:none;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: all .5s;
+    position: relative;
+    z-index:0;
+    overflow: hidden;
+}
+.ripple-1:hover{
+    box-shadow: 0 1px 2px 0 rgba(26,115,232,0.451), 0 1px 3px 1px rgba(26,115,232,0.302);
+    background-color: #297be6;
+    outline: 1px solid transparent;
+    border: none;
+}
+.ripple-1>span{
+    line-height: 36px;
+}
+
+.ripple-1-1{
+    position: absolute;
+    top: -82px;
+    left: -59px;
+    width: 200px;
+    height: 200px;
+    background: rgba(232,232,232,0);
+    z-index: -1;
+    border-radius: 70%;
+}
+
+.ripple-1-1.active{
+    animation: 1.2s active linear;
+}
+@keyframes active {
+   0%{
+       transform: scale(0);
+       background: rgba(232,232,232,0);
+   }
+    50%{
+        transform: scale(.8);
+        background: rgba(232,232,232,.3);
+    }
+    100%{
+        transform: scale(1);
+        background: rgba(232,232,232,0);
+    }
+}
 
 
 
+.ripple-1-2.active1{
+    transform: scale(4);
+    transition: all .8s;
+}
 
-
+.ripple-1-2{
+    position: absolute;
+    top:-30px;
+    left:-10px;
+    width:200px;
+    height:200px;
+    z-index: -1;
+    background: rgba(232,232,232,.1);
+    transform: scale(0);
+    border-radius: 50%;
+}
 
 
 
