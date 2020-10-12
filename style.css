@@ -230,8 +230,26 @@ body{
     cursor:pointer;
     transition: all .5s;
     position: relative;
-    z-index:0;
     overflow: hidden;
+    /*visibility: visible;*/
+}
+
+@keyframes btn4 {
+    0%{
+        transform: scale(0);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility:hidden;
+    }
+    100%{
+        /*visibility:hidden;*/
+    }
+}
+.ripple-2{
+   position: absolute;
+   border: 1px solid red;
 }
 .ripple-1:hover{
     box-shadow: 0 1px 2px 0 rgba(26,115,232,0.451), 0 1px 3px 1px rgba(26,115,232,0.302);
@@ -240,56 +258,16 @@ body{
     border: none;
 }
 .ripple-1>span{
-    line-height: 36px;
-}
-
-.ripple-1-1{
-    position: absolute;
-    top: -82px;
-    left: -59px;
-    width: 200px;
-    height: 200px;
-    background: rgba(232,232,232,0);
-    z-index: -1;
-    border-radius: 70%;
-}
-
-.ripple-1-1.active{
-    animation: 1.2s active linear;
-}
-@keyframes active {
-   0%{
-       transform: scale(0);
-       background: rgba(232,232,232,0);
-   }
-    50%{
-        transform: scale(.8);
-        background: rgba(232,232,232,.3);
-    }
-    100%{
-        transform: scale(1);
-        background: rgba(232,232,232,0);
-    }
+  line-height: 36px;
 }
 
 
 
-.ripple-1-2.active1{
-    transform: scale(4);
-    transition: all .8s;
 }
 
-.ripple-1-2{
-    position: absolute;
-    top:-30px;
-    left:-10px;
-    width:200px;
-    height:200px;
-    z-index: -1;
-    background: rgba(232,232,232,.1);
-    transform: scale(0);
-    border-radius: 50%;
-}
+
+
+
 
 
 

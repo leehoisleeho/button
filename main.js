@@ -35,24 +35,26 @@ btn3.onanimationend = () => {
 }
 
 let btn4 =document.getElementById("ripple-1")
-    btn4.onclick=function () {
-        let active = document.getElementById("ripple-1-1")
-        active.classList.add("active")
+
+ btn4.onclick=function (event) {
+
+     let X = event.offsetX
+     let Y = event.offsetY
+     console.log(X)
+     console.log(Y)
+            let childNode = document.createElement('div');
+            childNode.innerHTML = '<div></div>'
+            childNode.style.width =400+ "px"
+            childNode.style.height =400+ "px"
+            childNode.style.background = "rgba(255,255,255,0.2)"
+            childNode.style.position = "absolute"
+            childNode.style.top = Y-200 + "px"
+            childNode.style.left = X-200 + "px"
+            childNode.style.animation = ".8s ease-in btn4"
+            childNode.style.borderRadius="50%"
+            childNode.style.visibility="hidden"
+            childNode.style.pointerEvents="none"
+            document.getElementById('ripple-1').appendChild(childNode);
     }
 
-let active = document.getElementById("ripple-1-1")
-active.onanimationend=function () {
-    let active = document.getElementById("ripple-1-1")
-    active.classList.remove("active")
-}
 
-let btn5 = document.getElementById("ripple-2")
-btn5.onclick=function () {
-    let active1 = document.getElementById("ripple-1-2")
-    active1.classList.add("active1")
-}
-
-btn5.ontransitionend=function () {
-    let active1 = document.getElementById("ripple-1-2")
-    active1.classList.remove("active1")
-}
