@@ -33,11 +33,8 @@ btn3.onanimationend = () => {
     let btn3 = document.getElementById("shanchu4")
     btn3.classList.remove("start4")
 }
-
 let btn4 =document.getElementById("ripple-1")
-
- btn4.onclick=function (event) {
-
+btn4.onclick=function (event) {
      let X = event.offsetX
      let Y = event.offsetY
      console.log(X)
@@ -56,5 +53,23 @@ let btn4 =document.getElementById("ripple-1")
             childNode.style.pointerEvents="none"
             document.getElementById('ripple-1').appendChild(childNode);
     }
+
+let btn5 =document.getElementById("ripple-2")
+btn5.onclick=function (event) {
+    let W = event.offsetX
+    let Q = event.offsetY
+    let childNode1 = document.createElement('div');
+    childNode1.innerHTML = '<div></div>'
+    childNode1.style.width =240+ "px"
+    childNode1.style.height =108+ "px"
+    childNode1.style.background = "rgba(255,255,255,.2)"
+    childNode1.style.position = "absolute"
+    childNode1.style.top = Q-54 + "px"
+    childNode1.style.left = W-120 + "px"
+    childNode1.style.animation = ".5s ease-in btn5"
+    childNode1.style.visibility="hidden"
+    childNode1.style.pointerEvents="none"
+    document.getElementById('ripple-2').appendChild(childNode1);
+}
 
 

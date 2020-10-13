@@ -217,7 +217,6 @@ body{
 .ripple-1{
     width:80px;
     height:36px;
-    visibility:visible;
     font-size:14px;
     font-weight:500;
     color:rgb(255, 255, 255);
@@ -247,10 +246,18 @@ body{
         /*visibility:hidden;*/
     }
 }
-.ripple-2{
-   position: absolute;
-   border: 1px solid red;
+
+@keyframes btn5 {
+    0%{
+        transform: scaleX(0);
+        visibility: visible;
+    }
+    100%{
+        transform: scaleX(1);
+        visibility:hidden;
+    }
 }
+
 .ripple-1:hover{
     box-shadow: 0 1px 2px 0 rgba(26,115,232,0.451), 0 1px 3px 1px rgba(26,115,232,0.302);
     background-color: #297be6;
@@ -262,8 +269,6 @@ body{
 }
 
 
-
-}
 
 
 
