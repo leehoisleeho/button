@@ -72,4 +72,81 @@ btn5.onclick=function (event) {
     document.getElementById('ripple-2').appendChild(childNode1);
 }
 
+let btn6 = document.getElementById("nav-3-1")
+let btn7 = document.getElementById("nav-3-2")
+let btn8 = document.getElementById("nav-3-3")
+let btn9 = document.getElementById("nav-3-4")
+let btn10 = document.getElementById("nav-3-5")
+let container1 =document.getElementById("container1");
+let container2 =document.getElementById("container2");
+let container3 =document.getElementById("container3");
+let container4 =document.getElementById("container4");
+let container5 =document.getElementById("container5");
+
+    btn6.onclick=function () {
+    btn6.classList.add("main-3-active")
+    btn8.classList.remove("main-3-active")
+    btn9.classList.remove("main-3-active")
+    btn10.classList.remove("main-3-active")
+    btn7.classList.remove("main-3-active")
+    container1.classList.add("main-3-active1")
+    container2.classList.remove("main-3-active1")
+    container3.classList.remove("main-3-active1")
+    container4.classList.remove("main-3-active1")
+    container5.classList.remove("main-3-active1")
+}
+
+btn7.onclick=function () {
+    btn7.classList.add("main-3-active")
+    btn8.classList.remove("main-3-active")
+    btn9.classList.remove("main-3-active")
+    btn10.classList.remove("main-3-active")
+    btn6.classList.remove("main-3-active")
+    container2.classList.add("main-3-active1")
+    container1.classList.remove("main-3-active1")
+    container3.classList.remove("main-3-active1")
+    container4.classList.remove("main-3-active1")
+    container5.classList.remove("main-3-active1")
+}
+
+btn8.onclick=function () {
+    btn8.classList.add("main-3-active")
+    btn7.classList.remove("main-3-active")
+    btn9.classList.remove("main-3-active")
+    btn10.classList.remove("main-3-active")
+    btn6.classList.remove("main-3-active")
+    container3.classList.add("main-3-active1")
+    container1.classList.remove("main-3-active1")
+    container2.classList.remove("main-3-active1")
+    container4.classList.remove("main-3-active1")
+    container5.classList.remove("main-3-active1")
+}
+
+btn9.onclick=function () {
+    btn9.classList.add("main-3-active")
+    btn7.classList.remove("main-3-active")
+    btn8.classList.remove("main-3-active")
+    btn10.classList.remove("main-3-active")
+    btn6.classList.remove("main-3-active")
+    container4.classList.add("main-3-active1")
+    container1.classList.remove("main-3-active1")
+    container2.classList.remove("main-3-active1")
+    container3.classList.remove("main-3-active1")
+    container5.classList.remove("main-3-active1")
+}
+
+btn10.onclick=function () {
+    btn10.classList.add("main-3-active")
+    btn7.classList.remove("main-3-active")
+    btn8.classList.remove("main-3-active")
+    btn9.classList.remove("main-3-active")
+    btn6.classList.remove("main-3-active")
+    container5.classList.add("main-3-active1")
+    container1.classList.remove("main-3-active1")
+    container2.classList.remove("main-3-active1")
+    container3.classList.remove("main-3-active1")
+    container1.classList.remove("main-3-active1")
+}
+
+
 
